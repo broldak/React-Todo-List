@@ -1,0 +1,86 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue';
+  font-weight: 100; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+input {
+  font-family: 'Helvetica Neue';
+  font-weight: 100;
+  font-size: 14px; }
+
+a {
+  transition: color 0.2s ease-in; }
+  a.delete-icon {
+    text-decoration: none;
+    color: #9a9b9b;
+    font-size: 32px;
+    font-weight: 100; }
+    a.delete-icon:hover {
+      color: #5a5b5b; }
+    a.delete-icon:after {
+      content: "X"; }
+
+.todo-app {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-top: 24px; }
+  .todo-app form {
+    position: relative; }
+    .todo-app form input {
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      padding: 16px 42px 16px 16px;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 18px;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0; }
+    .todo-app form .clear-todo-input {
+      position: absolute;
+      top: 10px;
+      right: 17px; }
+  .todo-app .todo-list {
+    min-height: 100px;
+    border: 1px solid #ccc;
+    border-top: none;
+    display: flex; }
+    .todo-app .todo-list ul {
+      flex: 1; }
+    .todo-app .todo-list .empty-message {
+      align-self: center;
+      text-align: center;
+      flex: 1;
+      color: #9a9b9b;
+      font-size: 24px;
+      font-style: italic; }
+  .todo-app .todo-item {
+    text-align: center;
+    display: flex;
+    padding: 12px 0;
+    margin: 0 16px;
+    border-bottom: 1px solid #ccc; }
+    .todo-app .todo-item:last-of-type {
+      border-bottom: none; }
+    .todo-app .todo-item .todo-title {
+      flex: 1;
+      text-align: left;
+      align-self: center;
+      position: relative;
+      font-size: 18px; }
+      .todo-app .todo-item .todo-title .todo-edit {
+        position: absolute;
+        left: 0;
+        border: none;
+        font-size: 18px;
+        padding: 0; }
+    .todo-app .todo-item .destroy-todo {
+      position: relative;
+      top: 2px; }
